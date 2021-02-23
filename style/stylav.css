@@ -1,0 +1,31 @@
+article video{
+	float: left;
+	margin: 1em;
+	margin-top: 0em;
+	width: 40%;
+}
+
+article{ /* création des cases des articles */
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	margin: 1em;
+}
+
+article:hover{ /* changement curseur pour être plus dans le thème */
+	cursor: url(../images/thanosglove.png), pointer;
+}
+
+article a:hover{
+	cursor: url(../images/thanosglove.png), pointer;
+}
+
+#end{ /* position du final */
+	position: absolute;
+	margin-top: 3em;
+}
+
+.ex{
+	display: grid;
+	grid-template-columns: 1fr;
+}

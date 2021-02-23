@@ -1,0 +1,66 @@
+﻿.mar{ /* couleur du mot Marvel */
+	color: red;
+}
+
+.dc{ /* couleur du mot DC */
+	color: blue;
+}
+
+.dis{ /* couleur du mot Disney */
+	color: #d075ca;
+}
+
+.sony{ /* couleur du mot sony */
+	color: #3519c1
+}
+
+.sous{ /* création du deuxieme niveau de liste déroulante et ses contours */
+	display: none;
+	box-shadow: 0px 10px 20px #CCC;
+	background-color: white;
+	position: relative;
+	width: 80%;
+	z-index: 3;
+}
+
+.premier >  li ul li:hover .sous{ /* création d'un block pour le deuxieme niveau de liste et uniquement quand la souris est sur une liste de .premier */
+	display: block;
+}
+
+.sous li{ /* le rangement des deuxiemes niveaux de liste */
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.sous a{ /* définition des tailles des cases des listes de deuxieme niveau et retrait du trait ajouté */
+	padding: 0.25em;
+	border-bottom: none;
+}
+
+.sous a:hover{ /* apparition du fond gris */
+	background-color: #E5E5E5;
+}
+
+section article{ /* création des cases des articles */
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	margin: 1em;
+}
+
+section article:hover{ /* changement curseur pour être plus dans le thème */
+	cursor: url(../images/thanosglove.png), pointer;
+}
+
+footer section{
+	position: absolute;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 50%;
+}
+
+#end{
+	float: right;
+	text-align: right;
+}

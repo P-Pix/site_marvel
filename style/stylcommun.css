@@ -1,0 +1,157 @@
+@font-face{
+	font-family: marvel;
+	src: url("../fonts/HeroesAssembleBoldExpandtalic-qEn1.ttf");
+}
+
+header{
+	font-family: marvel;
+}
+
+main{
+	font-family: sans-serif;
+}
+
+footer{
+	font-family: marvel;
+}
+
+h1{ /* position et style du titre */
+	background-color: black;
+	color: white;
+	margin-top: 0em;
+	right: 0em;
+	left: 0em;
+	top: 0em;
+	text-align: center;
+	position:fixed;
+}
+
+header nav{
+	border-bottom: 1px solid black;
+}
+
+span{
+	color: blue;
+}
+
+span:hover::after { /* création de sous case style wikipédia */
+  content: attr(data-descr);
+  position: absolute;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: ivory;
+  padding: 1em;
+  color: black;
+  z-index: 1;
+  margin-top: 1em;
+  margin-left: -11%
+}
+
+nav{ /* détermination du lieu  des listes déroulantes */
+	background-color: white;
+	width: 100%;
+	right: 0em;
+	top: 2.3em;
+	position: fixed;
+}
+
+ul{ /* retrait des points des listes */
+	list-style-type: none;
+}
+
+li{ /* création et alignement des cases des listes */
+	float: left;
+	width: 33%;
+	text-align: center;
+	position: relative;
+}
+
+ul::after{  /* ajout aux ul losque la souris passe dessus */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a{ /* retrait de la ligne sous les liens cliquables */
+	text-decoration: none;
+	font-size: 100%;
+	transition: font-size 1s;
+}
+
+nav a{ /* création des box des listes */
+	display: block;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+a:hover{ /*ce qu'il se passe quand la souris est dessus*/
+	color: red;
+	border-bottom: 2px solid red;
+}
+
+.premier{ /* création du premier niveau de liste déroulante et ses contours */
+	display: none;
+	box-shadow: 0em 1em 2em #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
+nav >  ul li:hover .premier{ /* création d'un block pour le premier niveau de liste */
+	display: block;
+}
+
+.premier li{ /* le rangement des premiers niveaux de liste */
+	float: none;
+	width: 100%;
+	text-align:left;
+}
+
+.premier a{ /* définition des tailles des cases des listes de premier niveau et retrait du trait ajouté */
+	padding: 0.25em;
+	border-bottom: none;
+}
+
+.premier a:hover{ /* apparition du fond gris */
+	background-color: #E5E5E5;
+}
+
+main > video{ /* definition de la taille et position de la vidéo */
+	margin-top: 7em;
+	width: 100%;
+}
+
+h2{
+	text-align: center;
+}
+
+@media (max-width: 1000px)
+{
+	main section
+	{	
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 1000px)
+{
+	main section
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+p{ /* forme du texte */
+	text-align:justify;
+	margin: 1em;
+}
+
+a:hover{
+	font-size: 120%;
+	transition: font-size 1s;
+}

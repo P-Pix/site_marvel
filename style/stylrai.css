@@ -1,0 +1,69 @@
+figure{ /* création des cases des articles */
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	margin: 1em;
+	text-align: center;
+	margin: 1em;
+}
+
+figure:hover{ /* changement curseur pour être plus dans le thème */
+	cursor: url(../images/thanosglove.png), pointer;
+}
+
+figure a:hover{
+	cursor: url(../images/thanosglove.png), pointer;
+}
+
+figure img{
+	float: left;
+	margin: 1em;
+	width: 40%;
+}
+
+figcaption{
+	margin-top: 6em;
+	margin-right: 1em;
+}
+
+li{ /* création et alignement des cases des listes */
+	width: 50%;
+}
+
+@media (min-width: 333px)
+{
+	main section
+	{
+		display: grid;
+		grid-template-columns: 1fr
+	}
+}
+
+@media (min-width: 666px)
+{
+	main section
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px)
+{
+	main section
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+header li{ /* création et alignement des cases des listes */
+	float: left;
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+
+a:hover{
+	font-size:100%;
+}
